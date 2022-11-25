@@ -5,16 +5,16 @@ metadata:
 spec:
    replicas: 3
    selector: 
-     app: myvertexapp
+     app: mynginx
      version: 2.6.2
    template:                                     
      metadata:
        labels:
-          app: myvertexapp
+          app: mynginx
           version: 2.6.2
      spec:
         containers:
-        - name: myvertexapp-container
-          image: nbktechnosys/myjavaimage11nov22:1
+        - name: mynginx-container
+          image: nginx
           ports: 
-          - containerPort: 8080
+          - containerPort: 80
