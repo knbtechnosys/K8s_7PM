@@ -11,7 +11,7 @@ spec:
      metadata:
        labels:
           app: myvertexapp
-          version: 2.6.1
+          version: 2.6.2
      spec:
         containers:
         - name: myvertexapp-container
